@@ -1,78 +1,58 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-  "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>KimKha's Proxy</title>
 
-<html>
-<head>
-  <title>mirror - ɹoɹɹıɯ</title>
-  <link rel="stylesheet" href="static/base.2.css" type="text/css" charset="utf-8"/>
-  <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
-  <script type="text/javascript" charset="utf-8">
-    var activeColor = "#000000";
-    var disabledColor = "#959595";
-    var defaultValue = "type url here...";
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 
-    function loadBox() {
-      var box = document.getElementById("url_entry");
-      if (box.value != defaultValue) {
-        box.style.color = activeColor;
-      }
-    }
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container">
+			<h2 class=" text-center">KimKha's Proxy</h2>
+			<br/>
+			<div class="row"><div class="col-sm-12">
+				<form action="" method="get" accept-charset="utf-8" role="form" class="form-inline center-block" style="max-width:400px">
+					<input type="url" name="url" class="form-control" id="url" placeholder="Type url here..." size="45">
+					<button type="submit" class="btn btn-primary">GO</button>
+				</form>
+				<br/>
+				
+				<p class="text-info text-center">
+					<b>Fair use:</b> All content belongs to the original copyright holders, respectively.
+				</p>
+				
+				<div class="row"><div class="col-sm-4 col-md-offset-4">
+					<h3>List useful:</h3>
+					<div class="list-group">
+						<a href="/m.bbc.co.uk/vietnamese" class="list-group-item"><span class="glyphicon glyphicon-share"></span> BBC Vietnamese Mobile</a>
+						<a href="/bbc.co.uk/vietnamese" class="list-group-item"><span class="glyphicon glyphicon-share"></span> BBC Vietnamese PC</a>
+					</dev>
+				</div></div>
+			</div></div>
+		</div>
+		
+		<!--div class="secure">
+			{% if secure_url %}<a href="{{secure_url}}">{% endif %}<img src="/static/{% if secure_url %}no{% endif %}lock.png" width="16" height="16"> {% if secure_url %}not secure</a>{% else %}secure{% endif %}
+		</div-->
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
-    function focusBox() {
-      var box = document.getElementById("url_entry");
-      if (box.value == defaultValue) {
-        box.value = "";
-        box.style.color = activeColor;
-      }
-    }
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    function blurBox() {
-      var box = document.getElementById("url_entry");
-      if (box.value == "") {
-        box.style.color = disabledColor;
-        box.value = defaultValue;
-      }
-    }
-  </script>
-</head>
-<body onload="loadBox();">
-
-<div id="wrapper">
-<div id="container">
-
-<div id="header">
-  <span>mıɾɾoɾ</span><span>ɿoɿɿim</span>
-</div>
-
-<div id="form_wrapper">
-  <form action="" method="get" accept-charset="utf-8">
-  <div id="input_wrapper">
-    <span id="http_prefix">http://</span><input onfocus="focusBox();" onblur="blurBox();" type="text" name="url" value="type url here..." id="url_entry"/><input id="go_button" type="submit" value="Go"/>
-  </div>
-  </form>
-
-  <div id="warning">
-  Fair use: All content belongs to the original copyright holders, respectively.
-  </div>
-</div>
-
-<div class="secure">
-  {% if secure_url %}<a href="{{secure_url}}">{% endif %}<img src="/static/{% if secure_url %}no{% endif %}lock.png" width="16" height="16"> {% if secure_url %}not secure</a>{% else %}secure{% endif %}
-</div>
-
-</div>
-</div>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-50632146-1', 'kimkha.com');
-  ga('send', 'pageview');
-
-</script>
-
-</body>
+		  ga('create', 'UA-50632146-1', 'kimkha.com');
+		  ga('send', 'pageview');
+		</script>
+	</body>
 </html>
